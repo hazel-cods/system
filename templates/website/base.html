@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  
+  <header class="header">
+    <div class="navbar">
+      <div class="logo">
+        <h1><a href="{{ url_for('home')}}">SchoolH</a></h1>
+      </div>
+      <div class="navbar_btn">
+        <ul><li><a href="{{ url_for('home') }}">Home</a></li></ul>
+        <ul><li><a href="{{ url_for('home') }}">About Us</a></li></ul>
+        <ul><li><a href="{{ url_for('courses')}}">Admissions</a></li></ul>
+        <ul><li><a href="{{ url_for('enrollment')}}">Academics</a></li></ul>
+        <ul><li><a href="{{ url_for('enrollment')}}">Contact</a></li></ul>
+        <ul><li><a href="{{ url_for('login') }}">Register/Login</a></li></ul>
+      </div>
+    </div>
+  </header>
+  
+</body>
+</html>
