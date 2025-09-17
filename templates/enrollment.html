@@ -3,21 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>System Practice Beginner Friendly</title>
+  <title>Enrollment Form Page/title>
   <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
 
+  
   {% include "header.html " %}
   
-  
+  {% block content  %}
 
   
   <section>
     
       <div class="card">
         <div class="text_box">
-          <h1>Login</h1>
+          <h1> Enrollment Form </h1>
         </div>
         <div class="text_input">
           <input type="email" placeholder="Enter email address:">
@@ -26,10 +27,6 @@
         </div>
       </div>
   </section>
-
-
-  {% block content %}
-
 
   {% endblock %}
 

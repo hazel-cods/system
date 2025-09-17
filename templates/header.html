@@ -11,11 +11,12 @@
   <header class="header">
     <div class="navbar">
       <div class="logo">
-        <h1><a href="">SchoolH</a></h1>
+        <h1><a href="{{ url_for('index')}}">SchoolH</a></h1>
       </div>
       <div class="navbar_btn">
         <ul><li><a href="{{ url_for('index') }}">Home</a></li></ul>
-        <ul><li><a href="">Services</a></li></ul>
+        <ul><li><a href="{{ url_for('courses')}}">Courses</a></li></ul>
+        <ul><li><a href="{{ url_for('enrollment')}}">Enroll</a></li></ul>
         <ul><li><a href="{{ url_for('login') }}">Login</a></li></ul>
       </div>
     </div>
