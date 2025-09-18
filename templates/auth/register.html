@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register Page  </title>
-  <link rel="stylesheet" href="/static/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Page</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    {% include "website/base.html " %} {% block content %}
 
-  
-  {% include "website/header.html " %}
-  
-  {% block content  %}
-
-  
-  <section class="section_register">
-    
+    <section class="section_register">
       <div class="card">
         <div class="text_box">
-          <h1> Register </h1>
+          <h1>Register</h1>
         </div>
+
         <form class="text_input" method="POST">
-          <input type="email" placeholder="Enter email address:" required>
-          <input type="password" placeholder="Enter password: " required>
-          <label >Role</label>
+          <input type="email" name="email" placeholder="Enter email address:"
+          required>
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter password: "
+            required
+          />
+
+          <label>Role</label>
           <select name="role" required>
             <option value="student">Student</option>
             <option value="teacher">Teacher</option>
@@ -31,13 +33,14 @@
           </select>
           <button class="btn" type="submit">Register</button>
         </form>
-        <p>Already have an account? <br>
+
+        <p>
+          Already have an account? <br />
           <a href="{{url_for('auth.login')}}">Login here</a>
         </p>
       </div>
-  </section>
+    </section>
 
-  {% endblock %}
-
-</body>
+    {% endblock %}
+  </body>
 </html>

@@ -7,14 +7,14 @@ admin_bp = Blueprint("admin", __name__, url_prefix="/admin")
 def dashboard():
   return render_template("dashboard/dash_admin.html")
 
-@admin_bp("/students")
+@admin_bp.route("/students")
 def manage_students():
   return render_template("students/students.html")
 
-@admin_bp("/courses")
+@admin_bp.route("/courses")
 def manage_courses():
   return render_template("students/courses.html")
 
-@admin_bp("/teachers")
+@admin_bp.route("/teachers")
 def manage_teachers():
   return render_template("Teacher management page (to be implemented)")

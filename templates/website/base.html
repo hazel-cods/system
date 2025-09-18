@@ -11,15 +11,15 @@
   <header class="header">
     <div class="navbar">
       <div class="logo">
-        <h1><a href="{{ url_for('home')}}">SchoolH</a></h1>
+        <h1><a href="{{ url_for('website.home')}}">SchoolH</a></h1>
       </div>
       <div class="navbar_btn">
-        <ul><li><a href="{{ url_for('home') }}">Home</a></li></ul>
-        <ul><li><a href="{{ url_for('about') }}">About Us</a></li></ul>
-        <ul><li><a href="{{ url_for('admission')}}">Admissions</a></li></ul>
-        <ul><li><a href="{{ url_for('academics')}}">Academics</a></li></ul>
-        <ul><li><a href="{{ url_for('contact')}}">Contact</a></li></ul>
-        <ul><li><a href="{{ url_for('login') }}">Register/Login</a></li></ul>
+        <ul><li><a href="{{ url_for('website.home') }}">Home</a></li></ul>
+        <ul><li><a href="{{ url_for('website.about') }}">About Us</a></li></ul>
+        <ul><li><a href="{{ url_for('website.admission')}}">Admissions</a></li></ul>
+        <ul><li><a href="{{ url_for('website.academics')}}">Academics</a></li></ul>
+        <ul><li><a href="{{ url_for('website.contact')}}">Contact</a></li></ul>
+        <ul><li><a href="{{ url_for('auth.register') }}">Register</a></li></ul>
       </div>
     </div>
   </header>
