@@ -42,12 +42,12 @@ a{
 
 section{
   background: white;
-  margin-top: 10%;
+  margin-top: 5%;
   padding: 10px;
   justify-content: center;
   align-items: center;
   width:40%;
-  height: 50vh;
+  height: 47vh;
   margin-left: 30%;
   padding: 20px;
   border-radius: 20px;
@@ -63,13 +63,15 @@ section{
   justify-content: center;
   align-items: center;
   width:40%;
-  height: 65vh;
+  height: 59vh;
   margin-left: 30%;
   padding: 20px;
   border-radius: 20px;
 
 
 }
+
+
 
 .card{
   display: block;
