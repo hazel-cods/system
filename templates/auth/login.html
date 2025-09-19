@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>System Practice Beginner Friendly</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  {% include "website/base.html " %}
+  
+  
+{% block content %}
+  
+  <section>
+    
+      <div class="card">
+        <div class="text_box">
+          <h1>Login</h1>
+        </div>
+        <form class="text_input" method="POST"  >
+          <input type="text" name="email" placeholder="Email address:" required>
+          <input type="password" name="password" placeholder="Enter password: " required>
+          <button class="btn" type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <br>
+          <a href="{{url_for('auth.register')}}">Register here</a>
+        </p>
+      </div>
+  </section>
+
+
+
+  {% endblock %}
+
+</body>
+</html>
